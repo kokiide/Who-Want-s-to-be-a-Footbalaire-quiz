@@ -30,8 +30,15 @@ class QuizViewController: UIViewController {
         var tmpArray = [[Any]]()
         
         //------------------------ここから下にクイズを書く------------------------//
-        tmpArray.append(["Life is Tech!のロゴTシャツにない色は？","赤","オレンジ","黄色",2])
-        tmpArray.append(["SFCは何の略称？","Super Frendly Campus","School For Caution","Shonan Fujisawa Campus",3])
+        tmpArray.append(["Who scored a hat-trick during the 4-4 draw between Liverpool and Arsenal","Fernando Torres","Robin van Persie","Andre Arshavin",3])
+
+        
+        
+        
+        
+        
+        
+        
         //------------------------ここから上にクイズを書く------------------------//
         
         // 問題をシャッフルしてquizArrayに格納する
