@@ -99,11 +99,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-OM-tZU">
-                                <rect key="frame" x="281" y="631" width="94" height="28"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="numbers" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-6u-FAY">
+                                <rect key="frame" x="197" y="639" width="178" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99735420939999997" green="0.49812096360000002" blue="0.18744307760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50 more Questions!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-OM-tZU">
+                                <rect key="frame" x="197" y="639" width="178" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.40861374140000001" green="0.142486006" blue="0.90083301069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -112,6 +116,7 @@
                         <outlet property="choiceButtons1" destination="kki-U3-jv0" id="h9T-rg-ovb"/>
                         <outlet property="choiceButtons2" destination="n7F-Li-K3q" id="XDV-cF-KVS"/>
                         <outlet property="choiceButtons3" destination="MRD-48-CKy" id="9eP-oH-shy"/>
+                        <outlet property="questionNumber" destination="Tth-OM-tZU" id="xzT-B1-0Ug"/>
                         <outlet property="quizTextView" destination="iKH-Je-S8X" id="4qC-q2-jnF"/>
                         <segue destination="owP-hA-BJF" kind="show" identifier="toResultView" id="xvM-JA-bwI"/>
                     </connections>
@@ -184,6 +189,7 @@
         <image name="Question2" width="750" height="258"/>
         <image name="background" width="5200" height="9272"/>
         <image name="last2" width="2600" height="4636"/>
+        <image name="numbers" width="1142" height="175"/>
         <image name="top2" width="2600" height="4636"/>
     </resources>
 </document>

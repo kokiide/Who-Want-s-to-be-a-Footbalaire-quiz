@@ -125,7 +125,7 @@ class QuizViewController: UIViewController {
         if quizArray[0][4] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer+=1
-            
+            questionNumber.text = "\(quizArray.count) more Questions!"
         }
         
         quizArray.remove(at: 0)
@@ -134,6 +134,7 @@ class QuizViewController: UIViewController {
             performSegueToResult()
         } else {
             choiceQuiz()
+            questionNumber.text = "\(quizArray.count) more Questions!"
         }
     }
     
