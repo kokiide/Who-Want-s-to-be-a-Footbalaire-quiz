@@ -22,6 +22,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var choiceButtons1: UIButton!
     @IBOutlet var choiceButtons2: UIButton!
     @IBOutlet var choiceButtons3: UIButton!
+    @IBOutlet var questionNumber: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,6 +125,7 @@ class QuizViewController: UIViewController {
         if quizArray[0][4] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer+=1
+            
         }
         
         quizArray.remove(at: 0)
@@ -146,6 +148,7 @@ class QuizViewController: UIViewController {
             resultView.correctAnswer = self.correctAnswer
         }
     }
+    
     
     
     
